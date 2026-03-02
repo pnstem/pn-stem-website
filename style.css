@@ -705,3 +705,52 @@ body {
     text-align: center;
   }
 }
+/* ================= HERO MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  .hero-slider {
+    height: auto;
+    min-height: auto;
+  }
+
+  .slides {
+    position: relative;
+    height: 60vh;
+    min-height: 380px;
+  }
+
+  .slides img {
+    height: 100%;
+    object-position: center;
+  }
+
+  /* Overlay becomes full width */
+  .hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    margin-top: 16px;
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
