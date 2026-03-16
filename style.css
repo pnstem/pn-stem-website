@@ -392,31 +392,6 @@ body {
   padding: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
-/* ===== Degrees Styling ===== */
-
-.degrees {
-  font-size: 14px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 4px;
-}
-
-/* ===== Specialization Styling ===== */
-
-.specialization {
-  font-size: 13px;
-  font-style: italic;
-  color: #7c3aed;
-  margin-bottom: 12px;
-}
-
-/* designation spacing */
-
-.designation {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 16px;
-}
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
@@ -576,7 +551,7 @@ body {
 }
 
 
-/* ================= NEWSLETTER ================ */
+/* ================= NEWSLETTER ================= */
 
 .newsletter {
   background: linear-gradient(90deg, #7c3aed, #ec4899);
@@ -730,3 +705,64 @@ body {
     text-align: center;
   }
 }
+/* ================= HERO MOBILE PERFECT FIX ================= */
+@media (max-width: 768px) {
+
+  .hero-slider {
+    height: auto;
+    min-height: unset;
+  }
+
+  .slides {
+    position: relative;
+    height: 65vh;
+    min-height: 420px;
+  }
+
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* FULL-WIDTH OVERLAY */
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 24px 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(124, 58, 237, 0.85),
+      rgba(236, 72, 153, 0.85)
+    );
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-overlay h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .btn-primary {
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+}
+
